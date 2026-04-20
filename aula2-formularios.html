@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mais Formulários</title>
+</head>
+<body>
+    <hr>
+    <h1>Mais Formulários</h1>
+    <hr>
+    <form action="processa.html" method="get">
+
+    <h2>Label</h2>
+    <!--
+        label -> legenda para item da interface
+        for -> para
+    -->
+    <label>
+        Nome:
+        <input type="text" name="nome">
+    </label>
+
+    <label for="email">Email</label>
+    <input type="text" name="email" id="email">
+
+    <br>
+
+    <h2>Mais elementos de formulário</h2>
+
+        <b>Gênero:</b> <br>
+    <input type="radio" name="genero" value="feminino" id="fem">
+    <label for="fem">Feminino</label>
+
+    <input type="radio" name="genero" value="masculino" id="masc">
+    <label for="masc">Masculino</label>
+    <br><br>
+
+    <b>Estilo musical:</b> <br>
+    <input type="checkbox" name="estilo" value="rock" id="rock">
+    <label for="rock">Rock</label>
+
+    <input type="checkbox" name="estilo" value="pop" id="pop">
+    <label for="pop">Pop</label>
+
+    <input type="checkbox" name="estilo" value="r&b" id="rb">
+    <label for="rb">R&B</label>
+
+    <br><br>
+
+    Estado:
+    <select name="estado">
+        <option value="">Selecione</option>
+        <option value="sp">São Paulo</option>
+        <option value="rj">Rio de Janeiro</option>
+        <option value="rs">Rio Grande do Sul</option>
+        <option value="df">Distriro Federal</option>
+    </select>
+
+    <br><br>
+
+    Foto:
+    <input type="file" name="foto">
+
+    <br><br>
+
+    <input type="submit" value="cadastrar">
+
+    </form>
+
+    <form>
+
+        <h2>Fieldset & Legend</h2>
+        <!--
+            fieldset -> conjunto de campos
+            legend -> legenda para conjunto de campos
+        -->
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+
+            <label>
+        Nome:
+        <input type="text" name="nome2">
+            </label>
+
+            <label for="email2">Email</label>
+            <input type="text" name="email2" id="email2">
+
+            <br><br>
+
+            <b>Gênero:</b> <br>
+            <input type="radio" name="genero2" value="feminino" id="fem2">
+            <label for="fem2">Feminino</label>
+            
+            <input type="radio" name="genero2" value="masculino" id="masc2">
+            <label for="masc2">Masculino</label>
+            <br><br>
+            
+        </fieldset>
+
+    </form>
+
+
+</body>
+</html>
